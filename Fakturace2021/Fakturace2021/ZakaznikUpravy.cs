@@ -14,6 +14,9 @@ namespace Fakturace2021
     {
         private List<Zakaznik> zakaznici;
         private SqlRepository sqlRepository;
+        private string[] sloupce = new string[] { "IdZakaznik", "Jmeno", "Prijmeni", "Typ", "Adresa", "Ico", "Email", "Telefon" };
+        private int sloupecTrideni = 0;
+        private bool sestupne;
         public ZakaznikUpravy()
         {
             InitializeComponent();
@@ -21,7 +24,7 @@ namespace Fakturace2021
         }
         private void ZobrazData()
         {
-            zakaznici = sqlRepository.NactiZakazniky();
+            zakaznici = sqlRepository.NactiZakazniky(sloupce[sloupecTrideni], sestupne, tsHledat.Text);
             listView1.Items.Clear();
             foreach (var zakaznik in zakaznici)
             {

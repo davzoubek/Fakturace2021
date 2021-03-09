@@ -37,6 +37,9 @@
             this.hIco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hTelefon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsHledat = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -93,15 +96,35 @@
             // 
             this.hTelefon.Text = "Telefon";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsHledat});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tsHledat
+            // 
+            this.tsHledat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tsHledat.Name = "tsHledat";
+            this.tsHledat.Size = new System.Drawing.Size(100, 25);
+            // 
             // ZakaznikUpravy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.listView1);
             this.Name = "ZakaznikUpravy";
             this.Text = "ZakaznikUpravy";
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -116,5 +139,7 @@
         private System.Windows.Forms.ColumnHeader hIco;
         private System.Windows.Forms.ColumnHeader hEmail;
         private System.Windows.Forms.ColumnHeader hTelefon;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripTextBox tsHledat;
     }
 }

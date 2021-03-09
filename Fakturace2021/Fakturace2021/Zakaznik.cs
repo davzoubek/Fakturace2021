@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Fakturace2021
 {
@@ -28,6 +29,10 @@ namespace Fakturace2021
             Ico = ico;
             Mail = mail;
             Telefon = telefon;
+        }
+        public ListViewItem GetListViewItem()
+        {
+            return new ListViewItem(new string[] { Id.ToString(), Jmeno, Prijmeni, Typ, Adresa, Ico.ToString(), Mail, Telefon.ToString() });
         }
     }
 }
