@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fakturace2021", "Fakturace2021\Fakturace2021.csproj", "{7BAFD6C5-6E8E-4093-B07F-E5B25B42B1F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BAFD6C5-6E8E-4093-B07F-E5B25B42B1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAFD6C5-6E8E-4093-B07F-E5B25B42B1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAFD6C5-6E8E-4093-B07F-E5B25B42B1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAFD6C5-6E8E-4093-B07F-E5B25B42B1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E07B5E0C-8965-438F-9E76-4E91CE436352}
+	EndGlobalSection
+EndGlobal
