@@ -16,5 +16,11 @@ namespace Fakturace2021
         {
             InitializeComponent();
         }
+
+        private void Btn_Zakaznik_Click(object sender, EventArgs e)
+        {
+            ZakaznikUpravy zakaznikUpravy = new ZakaznikUpravy();
+            zakaznikUpravy.ShowDialog();
+        }
     }
 }
